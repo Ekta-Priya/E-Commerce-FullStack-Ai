@@ -6,7 +6,7 @@ import { BsCart3 } from "react-icons/bs";
 import { userDataContext } from "../context/UserContext";
 import { IoSearchCircle } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
-import { authDataContext } from "../context/authContext";
+import { authDataContext } from "../context/AuthContext";
 import { linkWithCredential } from "firebase/auth";
 import axios from "axios";
 import { MdHome } from "react-icons/md";
