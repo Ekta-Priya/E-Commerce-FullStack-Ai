@@ -125,14 +125,20 @@ function Collections() {
 
             </div>
             <div className="lg:pl-[20%] md:py-[10px]">
-                <div className="md:w-[80vw] w-[100vw] p-[20px] flex justify-between flex-col lg:flex-row lg:px-[50px]">
-                    <Title text1={"ALL"} text2={"COLLECTIONS"} />
-                    <select name="" id="" className="bg-slate-600 w-[60%] md:w-[200px] h-[50px] px-[10px] text-[white] rounded-lg hover:border-[#46d1f7] border-[2px]" onChange={(e) => setSortType(e.target.value)}>
-                        <option value="relevant" className="w-[100%] h-[100%]">Sort by: Relevant</option>
-                        <option value="low-high" className="w-[100%] h-[100%]">Sort by: Low-High</option>
-                        <option value="high-low" className="w-[100%] h-[100%]">Sort by: High-Low</option>
+                <div className="md:w-[80vw] w-[100vw] px-[20px] lg:px-[50px] flex flex-col gap-[20px]">
+                      <Title text1={"ALL"} text2={"COLLECTIONS"} />
+                     <div className="flex justify-end md:justify-between">
+                        <select
+                          className="bg-slate-600 w-[60%] md:w-[200px] h-[50px] px-[10px] text-[white] rounded-lg hover:border-[#46d1f7] border-[2px]"
+                          onChange={(e) => setSortType(e.target.value)}
+                        >
+                          <option value="relevant">Sort by: Relevant</option>
+                          <option value="low-high">Sort by: Low-High</option>
+                          <option value="high-low">Sort by: High-Low</option>
                     </select>
+                  </div>
                 </div>
+
                 <div className="lg:w-[80vw] md:w-[60vw] w-[100vw] min-h-[70vh] flex items-center justify-center flex-wrap gap-[30px]">
                     {
                         filterProduct.map((item, index) => {
