@@ -5,7 +5,7 @@ import Logo from '../assets/logo.jpg';
 import Google from '../assets/google.jpg';
 import { FaEye } from "react-icons/fa";
 import { BsEyeFill } from "react-icons/bs";
-import { authDataContext } from "../context/authContext";
+import { authDataContext } from "../context/AuthContext";
 import { signInWithPopup } from "firebase/auth";
 import { provider, auth } from "../../utils/Firebase";
 import { userDataContext } from "../context/UserContext.jsx";
