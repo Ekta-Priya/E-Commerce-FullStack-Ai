@@ -2,7 +2,6 @@ import React, { createContext, useContext, useEffect, useState } from "react";
 import { authDataContext } from "./AuthContext";
 import axios from "axios";
 import { userDataContext } from "../context/UserContext";
-import { getUserCart } from "../../../backend/controller/cartController";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
