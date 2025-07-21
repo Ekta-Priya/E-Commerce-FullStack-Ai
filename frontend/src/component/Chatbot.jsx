@@ -16,10 +16,10 @@ function Chatbot() {
 
     try {
       const res = await fetch("https://e-commerce-fullstack-ai-backend.onrender.com/api/chatbot", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: input }),
-    });
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ message: input }),
+});
 
       const data = await res.json();
       setMessages((prev) => [...prev, { sender: "bot", text: data.reply }]);
