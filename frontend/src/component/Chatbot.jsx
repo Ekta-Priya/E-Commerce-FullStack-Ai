@@ -1,71 +1,3 @@
-// // src/component/Chatbot.jsx
-// import React, { useState } from "react";
-
-// function Chatbot() {
-//   const [messages, setMessages] = useState([
-//     { sender: "bot", text: "Hi! How can I help you today?" },
-//   ]);
-//   const [input, setInput] = useState("");
-
-//   const sendMessage = async () => {
-//     if (!input.trim()) return;
-
-//     const userMsg = { sender: "user", text: input };
-//     setMessages((prev) => [...prev, userMsg]);
-//     setInput("");
-
-//     try {
-//       const res = await fetch("http://localhost:8000/api/chatbot", {
-//         method: "POST",
-//         headers: { "Content-Type": "application/json" },
-//         body: JSON.stringify({ message: input }),
-//       });
-//       const data = await res.json();
-//       setMessages((prev) => [...prev, { sender: "bot", text: data.reply }]);
-//     } catch (error) {
-//       console.error("Frontend Fetch Error:", error);
-//       setMessages((prev) => [
-//         ...prev,
-//         { sender: "bot", text: "Oops! Something went wrong." },
-//       ]);
-//     }
-//   };
-
-//   return (
-//     <div className="fixed bottom-4 right-4 bg-white shadow-xl w-[300px] h-[400px] rounded-xl flex flex-col">
-//       <div className="p-3 font-bold bg-blue-500 text-white rounded-t-xl">
-//         Support Chatbot
-//       </div>
-//       <div className="flex-1 p-2 overflow-y-auto text-sm">
-//         {messages.map((msg, i) => (
-//           <div key={i} className={`my-1 ${msg.sender === "user" ? "text-right" : "text-left"}`}>
-//             <span
-//               className={`inline-block px-3 py-1 rounded-xl ${
-//                 msg.sender === "user" ? "bg-blue-100" : "bg-gray-200"
-//               }`}
-//             >
-//               {msg.text}
-//             </span>
-//           </div>
-//         ))}
-//       </div>
-//       <div className="flex border-t">
-//         <input
-//           className="flex-1 p-2 outline-none"
-//           value={input}
-//           onChange={(e) => setInput(e.target.value)}
-//           onKeyDown={(e) => e.key === "Enter" && sendMessage()}
-//           placeholder="Type a message..."
-//         />
-//         <button className="px-3 text-blue-600" onClick={sendMessage}>
-//           Send
-//         </button>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Chatbot;//
 import React, { useState } from "react";
 
 function Chatbot() {
@@ -83,7 +15,7 @@ function Chatbot() {
     setInput("");
 
     try {
-      const res = await fetch("http://localhost:8000/api/chatbot", {
+      const res = await fetch("https://e-commerce-fullstack-ai-backend.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: input }),
