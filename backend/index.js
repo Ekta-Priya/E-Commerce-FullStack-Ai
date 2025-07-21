@@ -18,7 +18,7 @@ let port = process.env.PORT || 6000;
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-  origin:["https://e-commerce-fullstack-ai-frontend4.onrender.com","http://localhost:5173"],
+  origin:["https://e-commerce-fullstack-ai-frontend4.onrender.com","https://e-commerce-fullstack-ai-admin.onrender.com"],
   credentials:true
 }))
 
