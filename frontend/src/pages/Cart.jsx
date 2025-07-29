@@ -29,13 +29,13 @@ function Cart() {
 
     return (
         <div className="relative w-full min-h-screen p-4 pb-32 overflow-hidden">
-            {/* Blurred background layer */}
+           
             <div
                 className="absolute inset-0 z-0 bg-cover bg-center blur-[8px] brightness-[0.4]"
                 style={{ backgroundImage: `url(${cart})` }}
             ></div>
 
-            {/* Main content above the blur */}
+            
             <div className="relative z-10">
                 <div className="text-center mt-[80px] mb-6">
                     <Title text1={"YOUR"} text2={"CART"} />
