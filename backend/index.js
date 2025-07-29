@@ -39,6 +39,3 @@ app.listen(port, () => {
   connectDb();
 });
 
-//mongodb+srv://ektapriya1504:ekta1234@cluster0.jsskg3d.mongodb.net///
-
-//mongodb+srv://ektapriya1504:<ekta12345>@cluster0.jsskg3d.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0//
