@@ -90,5 +90,3 @@ function Registration(){
 }
 export default Registration
 
-//rzp_test_S38faaobXlP3Zf//keyid
-//keysecret--onJqXdhUvTpSvM0XjzNJ6nJF//
