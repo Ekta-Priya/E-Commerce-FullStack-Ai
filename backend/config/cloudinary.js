@@ -23,4 +23,3 @@ const uploadOnCloudinary = async (filesPath) => {
 }
 export default uploadOnCloudinary
 
-//"w-[82%] h-[100%] flex items-center justify-start overflow-x-hidden absolute right-0 z-10"//
